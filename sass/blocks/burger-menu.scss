@@ -1,0 +1,37 @@
+.burger-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90px;
+}
+
+.burger-menu__toggle {
+  width: 34px;
+  height: 25px;
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 34px;
+    height: 1px;
+    background-color: $color-accent;
+    box-shadow: 0 9px 0 0 $color-accent,
+      0 -9px 0 0 $color-accent;
+  }
+}
+
+.burger-menu__title {
+  font-weight: 700;
+  color: $text-white;
+  text-transform: uppercase;
+}

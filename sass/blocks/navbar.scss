@@ -1,0 +1,147 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100vh;
+}
+
+.navbar__current {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 55px;
+  margin-bottom: 85px;
+  padding-left: 65px;
+  box-sizing: border-box;
+  transform: rotate(90deg);
+
+  font-size: 53px;
+  line-height: 53px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  color: $text-color-accent;
+  letter-spacing: 0.1em;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 51px;
+    height: 4px;
+
+    background-color: #c0af91;
+  }
+}
+
+.navbar__link-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__link {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.navbar__link::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background-color: #303030;
+
+  transition: all 0.2s ease-in;
+}
+
+.navbar__link:hover::after,
+.navbar__link:focus::after {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: $color-accent;
+}
+
+.navbar__link--active::after {
+  background-color: $color-accent;
+}
+
+.home__left {
+  position: absolute;
+  top: 296px;
+  left: 15px;
+
+  width: 36px;
+  height: 220px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 4px;
+    height: 50px;
+
+    background-color: $color-accent;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    background-color: $color-accent;
+    box-shadow: 0 50px 0 0 #303030,
+      0 100px 0 0 #303030,
+      0 150px 0 0 #303030;
+  }
+}
+
+.home__left span {
+  position: absolute;
+  top: 70px;
+  left: -12px;
+  display: block;
+  width: 55px;
+  height: 53px;
+
+  transform: rotate(90deg);
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Example web development of a modern one page site Wooder</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favico.ico">
+</head>
+
+
+<body>
+  <h1 class="visually-hidden">Wooder web site</h1>
+
+  <div class="page-header__wrapper">
+    <header class="page-header container">
+
+      <nav class="main-navigation page-header__navigation">
+        <a class="page-header__logo" href="#">
+          <picture>
+            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Company logotype">
+          </picture>
+        </a>
+        <div class="burger-menu page-header__burger-menu">
+          <button class="burger-menu__toggle" aria-label="Open menu"></button>
+          <span class="burger-menu__title">Menu</span>
+        </div>
+        <ul class="main-navigation__site">
+          <li>
+            <a class="main-navigation__link main-navigation__link--active" href="#block-1">Home</a>
+          </li>
+          <li>
+            <a class="main-navigation__link" href="#block-2">Products</a>
+          </li>
+          <li>
+            <a class="main-navigation__link" href="#block-3">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <select class="page-header__lang" name="language">
+        <option value="English">En</option>
+      </select>
+    </header>
+  </div>
+
+
+  <main>
+    <div class="top-screen-bg">
+      <section id="block-1" class="home container block">
+        <h2 class="visually-hidden">Information</h2>
+
+        <div class="home__align">
+          <span class="home__logo">Wooder</span>
+          <a class="button home__link" href="#">
+            <svg class="home__link-icon" width="35" height="11">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+            Learn more</a>
+          <div class="home__decor">
+            <span>Scroll</span>
+          </div>
+        </div>
+
+        <div class="share home__share">
+          <button class="share__button" aria-label="Share button">
+            <svg class="share__button-icon" width="23" height="26">
+              <use xlink:href="img/sprite.svg#share"></use>
+            </svg>
+          </button>
+          <ul class="share__list">
+            <li>
+              <a class="share__link"
+                href="https://www.facebook.com/sharer/sharer.php?u=http://shockolada.site/projects/wooder/index.html"
+                target="_blank">
+                <svg class="share__link-icon" width="20" height="15">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="share__link"
+                href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR-URL&title=YOUR-TITLE&summary=YOUR-SUMMARY&source=http://shockolada.site/projects/wooder/index.html"
+                target="_blank">
+                <svg class="share__link-icon" width="20" height="15">
+                  <use xlink:href="img/sprite.svg#linked-in"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="share__link"
+                href="https://pinterest.com/pin/create/button/?url=http://shockolada.site/projects/wooder/index.html&media=img/template.jpg"
+                target="_blank">
+                <svg class="share__link-icon" width="20" height="15">
+                  <use xlink:href="img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+
+    <section id="block-2" class="products container block">
+      <h2 class="visually-hidden">Our products</h2>
+
+      <div class="products">
+        <ol class="products__list">
+          <li class="products__item products__item--furniture">
+            <div class="products__info">
+              <div class="products__count">
+                <span>01</span><span class="products__dot">.</span>
+              </div>
+              <h3 class="title products__title">Furniture</h3>
+              <p class="products__content">Wooder utilizes materials otherwise left behind, rendered
+                useless in their original intent. By creat&shy;ing new places made of reclaimed
+                barnwood</p>
+              <a class="link products__link" href="#">Learn more
+                <svg class="link__icon" width="35" height="11">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="products__image-wrapper">
+              <picture>
+                <img src="img/furniture@1x.jpg" srcset="img/furniture@2x.jpg 2x"
+                  alt="Image of Wodder furniture products">
+              </picture>
+            </div>
+          </li>
+
+          <li class="products__item products__item--decor">
+            <div class="products__info">
+              <div class="products__count">
+                <span>02</span><span class="products__dot">.</span>
+              </div>
+              <h3 class="title products__title">Decor</h3>
+              <p class="products__content">We make all types of wooden decor as per design given by
+                Architect, Interior designer, contractor which is suitable</p>
+              <a class="link products__link" href="#">
+                Learn more
+                <svg class="link__icon" width="35" height="11">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="products__image-wrapper">
+              <picture>
+                <img src="img/decor@1x.jpg" srcset="img/decor@2x.jpg 2x" alt="Image of Wodder decor products">
+              </picture>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section id="block-3" class="block features">
+      <h2 class="visually-hidden">Wooder products and benefits of company</h2>
+
+      <div class="benefits features__benefits container">
+        <h2 class="title benefits__title">Wooder &#8211; is quality</h2>
+        <p class="benefits__content">We create unique design objects made of rare wood, specially under the
+          order.<br>
+          Look at the short video about our work.</p>
+        <div class="videos benefits__videos">
+          <ul class="videos__list">
+            <li class="videos__item">
+              <div class="videos__preview">
+                <a class="videos__link video-open" href="https://www.youtube.com/watch?v=zwMZMYf3NX0" target="_blank">
+                  <img class="videos__img" src="img/video-innovative@1x.jpg" srcset="img/video-innovative@2x.jpg"
+                    alt="Innovative design">
+                  <div class="videos__icon-wrap">
+                    <svg class="videos__icon" width="22" height="26">
+                      <use xlink:href="img/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <span class="videos__caption">Innovative design</span>
+            </li>
+            <li class="videos__item">
+              <div class="videos__preview">
+                <a class="videos__link video-open" href="https://www.youtube.com/watch?v=Bcr_KBCmVPE"
+                  aria-label="Play video" target="_blank">
+                  <img class="videos__img" src="img/video-skills@1x.jpg" srcset="img/video-skills@2x.jpg 2x"
+                    alt="High level skills">
+                  <div class="videos__icon-wrap">
+                    <svg class="videos__icon" width="22" height="26">
+                      <use xlink:href="img/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <span class="videos__caption">High-level skills</span>
+            </li>
+
+            <li class="videos__item">
+              <div class="videos__preview">
+                <a class="videos__link video-open" href="https://www.youtube.com/watch?v=WxtDA33RSNc"
+                  aria-label="Play video" target="_blank">
+                  <img class="videos__img" src="img/video-quality@1x.jpg" srcset="img/video-quality@2x.jpg 2x"
+                    alt="Quality products">
+                  <div class="videos__icon-wrap">
+                    <svg class="videos__icon" width="22" height="26">
+                      <use xlink:href="img/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <span class="videos__caption">Quality products</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="design__wrapper">
+        <div class="design features__design">
+          <h2 class="title title--inner design__title">We do the design of any complexity</h2>
+          <p class="design__content">This is a team of professionals that make the furniture and wood decor high
+            standard. Creating modern designs. Adhering to the global quality standards. And we are doing work
+            with love.</p>
+          <a class="button design__link video-open" href="https://www.youtube.com/watch?v=4UP2NoTmywk" target="_blank">
+            <svg class="design__link-icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#play-btn"></use>
+            </svg>
+            Watch video
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-company container">
+      <h2 class="visually-hidden">Information about company</h2>
+      <div class="about-company__info">
+        <h2 class="title about-company__title">About us</h2>
+        <p class="about-company__content">We are a team of professionals in the wood pro&shy;cessing and the
+          creation of
+          wooden furniture of the highest class</p>
+        <a class="link about-company__link" href="#">
+          Learn more
+          <svg class="link__icon" width="35" height="11">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="about-company__image-wrapper">
+        <picture>
+          <img class="about-company__image" src="img/about@1x.jpg" srcset="img/about@2x.jpg 2x"
+            alt="Image of Wodder furniture products">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="page-footer__wrapper">
+    <footer class="page-footer container">
+      <span class="page-footer__copyright">@ 2016 Wooder</span>
+      <div class="page-footer__logo">
+        <picture>
+          <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Company logotype">
+        </picture>
+      </div>
+      <p class="page-footer__creator"><span>Designed by </span><span>Viacheslav Olianishyn</span></p>
+    </footer>
+  </div>
+
+  <div class="navbar">
+    <span class="navbar__current">01</span>
+    <ul class="navbar__link-list">
+      <li><a href="#block-1" class="navbar__link navbar__link--active" title="Home" aria-label="Scroll to home section"
+          data-section-count="01"></a></li>
+      <li><a href="#block-2" class="navbar__link" title="Products" aria-label="Scroll to furniture section"
+          data-section-count="02"></a></li>
+      <li><a href="#block-3" class="navbar__link" title="About us" aria-label="Scroll to about us section"
+          data-section-count="03"></a></li>
+    </ul>
+  </div>
+
+  <template id="modal-video">
+    <div class="modal">
+      <div class="modal-video__container">
+        <div class="modal-video__wrap">
+          <iframe class="modal-video"></iframe>
+        </div>
+      </div>
+      <button class="modal__close button-close" aria-label="Close modal window"></button>
+    </div>
+  </template>
+
+  <script src="js/libs/jquery-3.3.1.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/video.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.modal-video__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  max-width: 1200px;
+
+  background-color: #bababa;
+}
+
+.modal-video__wrap {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.modal-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+}

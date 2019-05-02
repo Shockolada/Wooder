@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "proxima_nova";
+  src: url("../fonts/pn.woff2") format("woff2"),
+    url("../fonts/pn.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_nova";
+  src: url("../fonts/pnb.woff2") format("woff2"),
+    url("../fonts/pnb.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  // &::after {
+  //     content: "";
+  //     display: block;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     width: 100%;
+  //     min-height: 4776px;
+  //     background-image: url("../img/site.jpg");
+  //     background-repeat: no-repeat;
+  //     background-position: top center;
+  //     opacity: 0.5;
+  //     z-index: -100;
+  //   }
+  //
+}
+
+body {
+  position: relative;
+
+  min-width: 1230px;
+  margin: 0;
+  padding: 0;
+
+
+  font-size: 15px;
+  line-height: 25px;
+  font-family: $font;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+
+  color: $text-color;
+
+  //   // temporally
+  //   &::after {
+  //     content: "";
+  //     display: block;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     width: 1230px;
+  //     min-height: 4776px;
+  //     background-image: url("../img/site.jpg");
+  //     background-repeat: no-repeat;
+  //     background-position: top center;
+  //     opacity: 1;
+  //     z-index: -100;
+  //   }
+}
+
+:focus {
+  outline-color: $color-accent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

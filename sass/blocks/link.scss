@@ -1,0 +1,45 @@
+.link {
+  position: relative;
+
+  margin-left: 3px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 42px;
+
+  font-size: 14px;
+  line-height: 70px;
+  font-weight: 700;
+  color: $text-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 45px;
+    height: 2px;
+    background-color: $color-accent;
+
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.link__icon {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  fill: $color-accent;
+}
+
+.link:hover,
+.link:active {
+
+  &::before {
+    width: calc(100% - 44px);
+  }
+}

@@ -1,0 +1,16 @@
+.title {
+  position: relative;
+
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  color: $text-dark;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  &--inner {
+    color: $text-color-accent;
+  }
+}

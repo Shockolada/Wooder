@@ -1,0 +1,26 @@
+.button {
+  position: relative;
+
+  display: inline-block;
+  min-width: 306px;
+  padding: 20px 0;
+  border: 2px solid $color-white;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $text-white;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  border-color: $color-accent;
+  color: $text-color-accent;
+}

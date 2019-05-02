@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+*.ai
+*.psd
+*.pdf
+*.sublime*
+*.code-workspace
+node_modules/
+npm-debug.*
+package-lock.json
+Thumbs.db
+Template/
+build/

@@ -1,0 +1,18 @@
+.top-screen-bg {
+  width: 100%;
+  height: calc(100vh + 42px);
+  margin-bottom: 92px;
+
+  background: $color-background;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media (min-resolution: $retina-dppx) {
+
+  .top-screen-bg {
+    background-image: url("../img/header-bg@2x.jpg");
+  }
+}
